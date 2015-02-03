@@ -120,6 +120,8 @@ a, a:hover {
 .entry-content img {
     max-width: 100%;
     height: auto;
+    margin-right: 1em;
+    margin-bottom: 1em;
 }
 
 .entry-content figcaption, .caption {
