@@ -14,13 +14,13 @@
 <link rel="canonical" href="/pages/devices/early/earlyRubber">
 
         <meta name="author" content="OCAD University" />
-        <meta name="description" content="Contents Design and research questions Description Components Use Cases Discussion Design and research questions How do simple non-intrusive vibrating patterns feel on the wrist? Are these wrist sensations enjoyable to the touch? Can the wrist distinguish between simple patterns? Can symbolic information (e.g textual messages) be transmitted using this ..." />
+        <meta name="description" content="Contents Description Hardware components used Motivation for building devices Use Cases Actor: game player, child aged 7-12 Actor: content creator Discussion and results Vibrating patterns on the wrist Using MIDI to compose patterns Description These simple and rather primitive devices were designed early in the project to test ideas for ..." />
 
     <meta property="og:site_name" content="MGDS-PET" />
     <meta property="og:type" content="article"/>
     <meta property="og:title" content="Early Rubber Vibrotactile Devices"/>
     <meta property="og:url" content="/pages/devices/early/earlyRubber"/>
-    <meta property="og:description" content="Contents Design and research questions Description Components Use Cases Discussion Design and research questions How do simple non-intrusive vibrating patterns feel on the wrist? Are these wrist sensations enjoyable to the touch? Can the wrist distinguish between simple patterns? Can symbolic information (e.g textual messages) be transmitted using this ..." />
+    <meta property="og:description" content="Contents Description Hardware components used Motivation for building devices Use Cases Actor: game player, child aged 7-12 Actor: content creator Discussion and results Vibrating patterns on the wrist Using MIDI to compose patterns Description These simple and rather primitive devices were designed early in the project to test ideas for ..." />
 
 
     <!-- Bootstrap -->
@@ -80,58 +80,94 @@ MGDS-PET            </a>
 <div class="contents topic" id="contents">
 <p class="topic-title first">Contents</p>
 <ul class="simple">
-<li><a class="reference internal" href="#design-and-research-questions" id="id1">Design and research&nbsp;questions</a></li>
-<li><a class="reference internal" href="#description" id="id2">Description</a></li>
-<li><a class="reference internal" href="#components" id="id3">Components</a></li>
-<li><a class="reference internal" href="#use-cases" id="id4">Use&nbsp;Cases</a></li>
-<li><a class="reference internal" href="#discussion" id="id5">Discussion</a></li>
+<li><a class="reference internal" href="#description" id="id1">Description</a></li>
+<li><a class="reference internal" href="#hardware-components-used" id="id2">Hardware components&nbsp;used</a></li>
+<li><a class="reference internal" href="#motivation-for-building-devices" id="id3">Motivation for building&nbsp;devices</a></li>
+<li><a class="reference internal" href="#use-cases" id="id4">Use Cases</a><ul>
+<li><a class="reference internal" href="#actor-game-player-child-aged-7-12" id="id5">Actor: game player, child aged&nbsp;7-12</a></li>
+<li><a class="reference internal" href="#actor-content-creator" id="id6">Actor: content&nbsp;creator</a></li>
 </ul>
-</div>
-<img alt="uml test diagram 1" src="/pages/devices/diagrams/test_uml1.png" style="width: 25%;" />
-<div class="section" id="design-and-research-questions">
-<h2><a class="toc-backref" href="#id1">Design and research&nbsp;questions</a></h2>
-<ul class="simple">
-<li>How do simple non-intrusive vibrating patterns feel on the&nbsp;wrist?</li>
-<li>Are these wrist sensations enjoyable to the&nbsp;touch?</li>
-<li>Can the wrist distinguish between simple&nbsp;patterns?</li>
-<li>Can symbolic information (e.g textual messages) be transmitted using this&nbsp;means?</li>
+</li>
+<li><a class="reference internal" href="#discussion-and-results" id="id7">Discussion and results</a><ul>
+<li><a class="reference internal" href="#vibrating-patterns-on-the-wrist" id="id8">Vibrating patterns on the&nbsp;wrist</a></li>
+<li><a class="reference internal" href="#using-midi-to-compose-patterns" id="id9">Using <span class="caps">MIDI</span> to compose&nbsp;patterns</a></li>
+</ul>
+</li>
 </ul>
 </div>
 <div class="section" id="description">
-<h2><a class="toc-backref" href="#id2">Description</a></h2>
-<p>These are devices designed early in the project to test ideas for wrist-wearables in which vibrating motors and <span class="caps">LED</span> lights provide non-intrusive notifications. The device was built to test&nbsp;how</p>
-<p>Components are simple and exposed. These devices are controlled externally by an Arduino&nbsp;board.</p>
-<p>Vibrating motors on the band are programmed to play with various vibrational patterns and at various intensities. Composition of these patterns using <span class="caps">MIDI</span> data is also&nbsp;possible.</p>
-<p>It is possible to create patterns using music composition techniques and standard musical notation (in musical notation applications such as <a class="reference external" href="http://www.lilypond.org/">Lilypond</a>, which exports <span class="caps">MIDI</span> data), Using this technique it is possible to compose music control data using standard musical notation, which the Arduino board can use to recreate these&nbsp;patterns.</p>
+<h2><a class="toc-backref" href="#id1">Description</a></h2>
+<p>These simple and rather primitive devices were designed early in the project to test ideas for wrist-wearables in which vibrating motors and <span class="caps">LED</span> lights create interesting patterns of light and vibrations, and might provide useful non-intrusive notifications. Components are simple and exposed. These devices are controlled externally by an Arduino board. Vibrating motors on the band are programmed to play various vibrational patterns at various&nbsp;intensities.</p>
+<p>One interesting offshoot of this work is that we discovered that it is possible to create patterns using music composition techniques and standard musical notation (for example, the musical notation application <a class="reference external" href="http://www.lilypond.org/">Lilypond</a> exports <span class="caps">MIDI</span> data which can be used by the device). Using this technique it is possible to compose music control data using standard musical notation, which the Arduino board uses to recreate rhythmic&nbsp;patterns.</p>
 </div>
-<div class="section" id="components">
-<h2><a class="toc-backref" href="#id3">Components</a></h2>
+<div class="section" id="hardware-components-used">
+<h2><a class="toc-backref" href="#id2">Hardware components&nbsp;used</a></h2>
 <ul class="simple">
 <li>Rubber band (cut and fashioned from recycled conveyor-belt&nbsp;material)</li>
 <li>8 vibrating motors (their original use is as vibrators for mobile&nbsp;phones)</li>
 <li>7 <span class="caps">LED</span>&nbsp;lights</li>
-<li>Arduino Mega 2560 microcontroller&nbsp;board</li>
+<li>Arduino Mega 2560 microcontroller board (power for device comes via this board by <span class="caps">USB</span> cable to a&nbsp;computer)</li>
+<li>wiring that connects&nbsp;components</li>
+</ul>
+</div>
+<div class="section" id="motivation-for-building-devices">
+<h2><a class="toc-backref" href="#id3">Motivation for building&nbsp;devices</a></h2>
+<p>For application to transmedia games, the idea arose early in the project that players would benefit from non-intrusive notifications that vibrating components against the skin provide. This early band explored how simple vibrating patterns feel against the skin and wrist and whether an array of vibrating components might have the potential of conveying&nbsp;information.</p>
+<p>We were motivated to build these devices to explore the following research&nbsp;questions:</p>
+<ul class="simple">
+<li>How do simple non-intrusive vibrating patterns feel on the&nbsp;wrist?</li>
+<li>Are these wrist sensations enjoyable to the&nbsp;touch?</li>
+<li>Can the wrist distinguish between simple&nbsp;patterns?</li>
+<li>Does an array of simple vibrating patterns create a richer sensation, or does it become&nbsp;unpleasant?</li>
+<li>Can symbolic information (e.g textual messages) be represented using vibrating&nbsp;patterns?</li>
+<li>Can directional information (e.g &#8216;go the left&#8217;) be transmitted using this&nbsp;means?</li>
 </ul>
 </div>
 <div class="section" id="use-cases">
 <h2><a class="toc-backref" href="#id4">Use&nbsp;Cases</a></h2>
-<ul>
+<div class="section" id="actor-game-player-child-aged-7-12">
+<h3><a class="toc-backref" href="#id5">Actor: game player, child aged&nbsp;7-12</a></h3>
+<ol class="arabic">
+<li><dl class="first docutils">
+<dt>Wear the wrist&nbsp;device</dt>
+<dd><p class="first last">Such that the vibrating patterns can be felt against the&nbsp;skin</p>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>Recognize a vibrating pattern to help play the game more&nbsp;effectively</dt>
+<dd><p class="first last">Game designer will create vibrational patterns embedded in the game&#8217;s content, cued to arise at appropriate moments during the&nbsp;game.</p>
+</dd>
+</dl>
+</li>
+</ol>
+</div>
+<div class="section" id="actor-content-creator">
+<h3><a class="toc-backref" href="#id6">Actor: content&nbsp;creator</a></h3>
+<ol class="arabic">
 <li><dl class="first docutils">
 <dt>Compose a simple, sequential rhythmic&nbsp;pattern</dt>
-<dd><p class="first last">Incorporating vibrating motors and <span class="caps">LED</span> lights. These patterns are designed on a computer and then loaded onto the microcontroller board with a <span class="caps">USB</span>&nbsp;cable.</p>
+<dd><p class="first last">Incorporate vibrating motors and <span class="caps">LED</span> lights. These patterns are designed on a computer and then loaded onto the microcontroller board with a <span class="caps">USB</span>&nbsp;cable.</p>
 </dd>
 </dl>
 </li>
 <li><dl class="first docutils">
-<dt>Load this pattern onto the attached Arduino controller&nbsp;board</dt>
-<dd><p class="first last">The band is controlled using an external board. These boards come in various sizes and therefore can be made quite small. The computational demands placed on the board by this device is&nbsp;minimal.</p>
+<dt>Load composed pattern from computer onto the attached Arduino controller&nbsp;board</dt>
+<dd><p class="first last">The band is controlled using an external board. These boards come in various sizes and can be made quite small. The computational demands placed on the board by this device is&nbsp;minimal.</p>
 </dd>
 </dl>
 </li>
-</ul>
+</ol>
 </div>
-<div class="section" id="discussion">
-<h2><a class="toc-backref" href="#id5">Discussion</a></h2>
+</div>
+<div class="section" id="discussion-and-results">
+<h2><a class="toc-backref" href="#id7">Discussion and&nbsp;results</a></h2>
+<div class="section" id="vibrating-patterns-on-the-wrist">
+<h3><a class="toc-backref" href="#id8">Vibrating patterns on the&nbsp;wrist</a></h3>
+</div>
+<div class="section" id="using-midi-to-compose-patterns">
+<h3><a class="toc-backref" href="#id9">Using <span class="caps">MIDI</span> to compose&nbsp;patterns</a></h3>
+</div>
 </div>
 
         </div>
