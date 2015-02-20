@@ -14,13 +14,13 @@
 <link rel="canonical" href="/pages/devices/early/earlyRubber">
 
         <meta name="author" content="OCAD University" />
-        <meta name="description" content="Contents Description Hardware components used Motivation for building devices Use Cases Actor: game player, child aged 7-12 Actor: content creator Discussion and results Vibrating patterns on the wrist Using MIDI to compose patterns Description These simple and rather primitive devices were designed early in the project to test ideas for ..." />
+        <meta name="description" content="Contents 1   Description 2   Design and research questions 3   Components 4   User stories / Use cases 4.1   Actor: game player, child aged 7-12 4.2   Actor: content creator 5   Discussion and results 5.1   The feel of vibrating patterns on the wrist 5.2   Distinguishing between simple patterns by wrist ..." />
 
     <meta property="og:site_name" content="MGDS-PET" />
     <meta property="og:type" content="article"/>
     <meta property="og:title" content="Early Rubber Vibrotactile Devices"/>
     <meta property="og:url" content="/pages/devices/early/earlyRubber"/>
-    <meta property="og:description" content="Contents Description Hardware components used Motivation for building devices Use Cases Actor: game player, child aged 7-12 Actor: content creator Discussion and results Vibrating patterns on the wrist Using MIDI to compose patterns Description These simple and rather primitive devices were designed early in the project to test ideas for ..." />
+    <meta property="og:description" content="Contents 1   Description 2   Design and research questions 3   Components 4   User stories / Use cases 4.1   Actor: game player, child aged 7-12 4.2   Actor: content creator 5   Discussion and results 5.1   The feel of vibrating patterns on the wrist 5.2   Distinguishing between simple patterns by wrist ..." />
 
 
     <!-- Bootstrap -->
@@ -51,6 +51,7 @@ MGDS-PET            </a>
         </div>
         <div class="collapse navbar-collapse navbar-ex1-collapse">
             <ul class="nav navbar-nav">
+                    <li><a href="/category/blog.html">Blog</a></li>
                     <li><a href="/pages/questions/questions.html">Questions</a></li>
                     <li><a href="/pages/ideas/ideas.html">Ideas</a></li>
                     <li><a href="/pages/devices/devices.html">Devices</a></li>
@@ -79,29 +80,43 @@ MGDS-PET            </a>
 <img alt="early rubber device 2" src="/images/devices/early/rubber/P1130396.RW2.jpg" style="width: 25%;" />
 <div class="contents topic" id="contents">
 <p class="topic-title first">Contents</p>
-<ul class="simple">
-<li><a class="reference internal" href="#description" id="id1">Description</a></li>
-<li><a class="reference internal" href="#hardware-components-used" id="id2">Hardware components&nbsp;used</a></li>
-<li><a class="reference internal" href="#motivation-for-building-devices" id="id3">Motivation for building&nbsp;devices</a></li>
-<li><a class="reference internal" href="#use-cases" id="id4">Use Cases</a><ul>
-<li><a class="reference internal" href="#actor-game-player-child-aged-7-12" id="id5">Actor: game player, child aged&nbsp;7-12</a></li>
-<li><a class="reference internal" href="#actor-content-creator" id="id6">Actor: content&nbsp;creator</a></li>
+<ul class="auto-toc simple">
+<li><a class="reference internal" href="#description" id="id1">1&nbsp;&nbsp;&nbsp;Description</a></li>
+<li><a class="reference internal" href="#design-and-research-questions" id="id2">2&nbsp;&nbsp;&nbsp;Design and research&nbsp;questions</a></li>
+<li><a class="reference internal" href="#components" id="id3">3&nbsp;&nbsp;&nbsp;Components</a></li>
+<li><a class="reference internal" href="#user-stories-use-cases" id="id4">4&nbsp;&nbsp;&nbsp;User stories / Use cases</a><ul class="auto-toc">
+<li><a class="reference internal" href="#actor-game-player-child-aged-7-12" id="id5">4.1&nbsp;&nbsp;&nbsp;Actor: game player, child aged&nbsp;7-12</a></li>
+<li><a class="reference internal" href="#actor-content-creator" id="id6">4.2&nbsp;&nbsp;&nbsp;Actor: content&nbsp;creator</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#discussion-and-results" id="id7">Discussion and results</a><ul>
-<li><a class="reference internal" href="#vibrating-patterns-on-the-wrist" id="id8">Vibrating patterns on the&nbsp;wrist</a></li>
-<li><a class="reference internal" href="#using-midi-to-compose-patterns" id="id9">Using <span class="caps">MIDI</span> to compose&nbsp;patterns</a></li>
+<li><a class="reference internal" href="#discussion-and-results" id="id7">5&nbsp;&nbsp;&nbsp;Discussion and results</a><ul class="auto-toc">
+<li><a class="reference internal" href="#the-feel-of-vibrating-patterns-on-the-wrist" id="id8">5.1&nbsp;&nbsp;&nbsp;The feel of vibrating patterns on the&nbsp;wrist</a></li>
+<li><a class="reference internal" href="#distinguishing-between-simple-patterns-by-wrist" id="id9">5.2&nbsp;&nbsp;&nbsp;Distinguishing between simple patterns by&nbsp;wrist</a></li>
+<li><a class="reference internal" href="#directional-information-using-vibrational-arrays" id="id10">5.3&nbsp;&nbsp;&nbsp;Directional information using vibrational&nbsp;arrays</a></li>
+<li><a class="reference internal" href="#representing-symbolic-information-using-vibrating-patterns" id="id11">5.4&nbsp;&nbsp;&nbsp;Representing symbolic information using vibrating&nbsp;patterns</a></li>
 </ul>
 </li>
 </ul>
 </div>
 <div class="section" id="description">
-<h2><a class="toc-backref" href="#id1">Description</a></h2>
-<p>These simple and rather primitive devices were designed early in the project to test ideas for wrist-wearables in which vibrating motors and <span class="caps">LED</span> lights create interesting patterns of light and vibrations, and might provide useful non-intrusive notifications. Components are simple and exposed. These devices are controlled externally by an Arduino board. Vibrating motors on the band are programmed to play various vibrational patterns at various&nbsp;intensities.</p>
+<h2><a class="toc-backref" href="#id1">1&nbsp;&nbsp;&nbsp;Description</a></h2>
+<p>These simple and rather primitive devices were built early in the project to test ideas for wrist-wearables in which vibrating motors and <span class="caps">LED</span> lights create interesting patterns of light and vibration. A use case for them would be to provide useful non-intrusive notifications for game players. Components are simple and exposed. These devices are controlled externally by an Arduino board. Vibrating motors on the band are programmed to play various vibrational patterns at various&nbsp;intensities.</p>
 <p>One interesting offshoot of this work is that we discovered that it is possible to create patterns using music composition techniques and standard musical notation (for example, the musical notation application <a class="reference external" href="http://www.lilypond.org/">Lilypond</a> exports <span class="caps">MIDI</span> data which can be used by the device). Using this technique it is possible to compose music control data using standard musical notation, which the Arduino board uses to recreate rhythmic&nbsp;patterns.</p>
 </div>
-<div class="section" id="hardware-components-used">
-<h2><a class="toc-backref" href="#id2">Hardware components&nbsp;used</a></h2>
+<div class="section" id="design-and-research-questions">
+<h2><a class="toc-backref" href="#id2">2&nbsp;&nbsp;&nbsp;Design and research&nbsp;questions</a></h2>
+<p>For application in transmedia games, the idea arose early in the project that players would benefit from non-intrusive notifications that vibrating components placed near, or against, the skin could provide. This early band explored how simple vibrating patterns feel against the skin and wrist and whether arrays of vibrating components could convey symbolic&nbsp;information.</p>
+<p>We were motivated to build these devices in order to explore the following research&nbsp;questions:</p>
+<ul class="simple">
+<li>How do vibrating patterns feel on the&nbsp;wrist?</li>
+<li>Does an array of simple vibrating patterns create a richer sensation, or does it become&nbsp;unpleasant?</li>
+<li>Can the wrist distinguish between simple&nbsp;patterns?</li>
+<li>Can directional information (e.g &#8216;go the left&#8217;) be communicated using this&nbsp;means?</li>
+<li>Can symbolic information (e.g textual messages) be represented using vibrating&nbsp;patterns?</li>
+</ul>
+</div>
+<div class="section" id="components">
+<h2><a class="toc-backref" href="#id3">3&nbsp;&nbsp;&nbsp;Components</a></h2>
 <ul class="simple">
 <li>Rubber band (cut and fashioned from recycled conveyor-belt&nbsp;material)</li>
 <li>8 vibrating motors (their original use is as vibrators for mobile&nbsp;phones)</li>
@@ -110,50 +125,42 @@ MGDS-PET            </a>
 <li>wiring that connects&nbsp;components</li>
 </ul>
 </div>
-<div class="section" id="motivation-for-building-devices">
-<h2><a class="toc-backref" href="#id3">Motivation for building&nbsp;devices</a></h2>
-<p>For application to transmedia games, the idea arose early in the project that players would benefit from non-intrusive notifications that vibrating components against the skin provide. This early band explored how simple vibrating patterns feel against the skin and wrist and whether an array of vibrating components might have the potential of conveying&nbsp;information.</p>
-<p>We were motivated to build these devices to explore the following research&nbsp;questions:</p>
-<ul class="simple">
-<li>How do simple non-intrusive vibrating patterns feel on the&nbsp;wrist?</li>
-<li>Are these wrist sensations enjoyable to the&nbsp;touch?</li>
-<li>Can the wrist distinguish between simple&nbsp;patterns?</li>
-<li>Does an array of simple vibrating patterns create a richer sensation, or does it become&nbsp;unpleasant?</li>
-<li>Can symbolic information (e.g textual messages) be represented using vibrating&nbsp;patterns?</li>
-<li>Can directional information (e.g &#8216;go the left&#8217;) be transmitted using this&nbsp;means?</li>
-</ul>
-</div>
-<div class="section" id="use-cases">
-<h2><a class="toc-backref" href="#id4">Use&nbsp;Cases</a></h2>
+<div class="section" id="user-stories-use-cases">
+<h2><a class="toc-backref" href="#id4">4&nbsp;&nbsp;&nbsp;User stories / Use&nbsp;cases</a></h2>
+<p><strong>Pattern used for composing user stories</strong>: &quot;As a <strong>&lt;role&gt;</strong>, I want to <strong>&lt;goal/desire&gt;</strong> so that <strong>&lt;benefit occur&gt;</strong>&quot;</p>
 <div class="section" id="actor-game-player-child-aged-7-12">
-<h3><a class="toc-backref" href="#id5">Actor: game player, child aged&nbsp;7-12</a></h3>
+<h3><a class="toc-backref" href="#id5">4.1&nbsp;&nbsp;&nbsp;Actor: game player, child aged&nbsp;7-12</a></h3>
 <ol class="arabic">
 <li><dl class="first docutils">
 <dt>Wear the wrist&nbsp;device</dt>
-<dd><p class="first last">Such that the vibrating patterns can be felt against the&nbsp;skin</p>
+<dd><p class="first">&quot;As a game player I want to wear the device so I can feel the device&#8217;s vibrations against my&nbsp;wrist&quot;</p>
+<p class="last">The player wants a device that fits her wrist and provides sensations, which are novel, pleasant and feel good. This band design, of course, is too primitive to fulfill this purpose since it has an inappropriate-for-children &#8216;Gothic&#8217; or industrial style. However, as a platform for testing ideas it was quite&nbsp;successful.</p>
 </dd>
 </dl>
 </li>
 <li><dl class="first docutils">
 <dt>Recognize a vibrating pattern to help play the game more&nbsp;effectively</dt>
-<dd><p class="first last">Game designer will create vibrational patterns embedded in the game&#8217;s content, cued to arise at appropriate moments during the&nbsp;game.</p>
+<dd><p class="first">&quot;As a game player I want the device to guide me and help me play the game&nbsp;better&quot;</p>
+<p class="last">Game designer will create vibrational patterns embedded in the game&#8217;s content, cued to arise at appropriate narrative points during the&nbsp;game.</p>
 </dd>
 </dl>
 </li>
 </ol>
 </div>
 <div class="section" id="actor-content-creator">
-<h3><a class="toc-backref" href="#id6">Actor: content&nbsp;creator</a></h3>
+<h3><a class="toc-backref" href="#id6">4.2&nbsp;&nbsp;&nbsp;Actor: content&nbsp;creator</a></h3>
 <ol class="arabic">
 <li><dl class="first docutils">
 <dt>Compose a simple, sequential rhythmic&nbsp;pattern</dt>
-<dd><p class="first last">Incorporate vibrating motors and <span class="caps">LED</span> lights. These patterns are designed on a computer and then loaded onto the microcontroller board with a <span class="caps">USB</span>&nbsp;cable.</p>
+<dd><p class="first">&quot;As a content creator I want to be able to create interesting vibrating patterns that could be used in various narrative&nbsp;situations&quot;</p>
+<p class="last">Incorporate vibrating motors and <span class="caps">LED</span> lights. These patterns are designed on a computer and then loaded onto the microcontroller board with a <span class="caps">USB</span>&nbsp;cable.</p>
 </dd>
 </dl>
 </li>
 <li><dl class="first docutils">
-<dt>Load composed pattern from computer onto the attached Arduino controller&nbsp;board</dt>
-<dd><p class="first last">The band is controlled using an external board. These boards come in various sizes and can be made quite small. The computational demands placed on the board by this device is&nbsp;minimal.</p>
+<dt>Load composed vibrational pattern from computer so that device can use&nbsp;it</dt>
+<dd><p class="first">&quot;As a content creator I want to be able to transmit a composed pattern onto the&nbsp;device&quot;</p>
+<p class="last">The wrist device is controlled by an Arduino microcontroller board. These boards, which provide the device&#8217;s &#8216;brains,&#8217; come in various sizes and can be made quite small. The computational demands placed on the microcontroller by the device is&nbsp;minimal.</p>
 </dd>
 </dl>
 </li>
@@ -161,12 +168,22 @@ MGDS-PET            </a>
 </div>
 </div>
 <div class="section" id="discussion-and-results">
-<h2><a class="toc-backref" href="#id7">Discussion and&nbsp;results</a></h2>
-<div class="section" id="vibrating-patterns-on-the-wrist">
-<h3><a class="toc-backref" href="#id8">Vibrating patterns on the&nbsp;wrist</a></h3>
+<h2><a class="toc-backref" href="#id7">5&nbsp;&nbsp;&nbsp;Discussion and&nbsp;results</a></h2>
+<div class="section" id="the-feel-of-vibrating-patterns-on-the-wrist">
+<h3><a class="toc-backref" href="#id8">5.1&nbsp;&nbsp;&nbsp;The feel of vibrating patterns on the&nbsp;wrist</a></h3>
+<p>Vibrating patterns on the wrist are not uncomfortable, but they do take time to get used to. Some people are sensitive to such stimulation. If you expect the vibration, as for instance in the course of game-play, then it likely is less intrusive than if it is&nbsp;unexpected.</p>
 </div>
-<div class="section" id="using-midi-to-compose-patterns">
-<h3><a class="toc-backref" href="#id9">Using <span class="caps">MIDI</span> to compose&nbsp;patterns</a></h3>
+<div class="section" id="distinguishing-between-simple-patterns-by-wrist">
+<h3><a class="toc-backref" href="#id9">5.2&nbsp;&nbsp;&nbsp;Distinguishing between simple patterns by&nbsp;wrist</a></h3>
+<p>Pattern can made be rhythmically distinct and people have little difficulty in distinguishing them. This would depend on the length of the pattern and its repetition. The literature states that the tactile resolution is a fraction of aural resolution using the&nbsp;ears.</p>
+</div>
+<div class="section" id="directional-information-using-vibrational-arrays">
+<h3><a class="toc-backref" href="#id10">5.3&nbsp;&nbsp;&nbsp;Directional information using vibrational&nbsp;arrays</a></h3>
+<p>These devices encircle the wrist. Therefore, their orientation is not fixed on any plane. It is unclear whether they could be used to point in various directions and provide useful orienteering&nbsp;information.</p>
+</div>
+<div class="section" id="representing-symbolic-information-using-vibrating-patterns">
+<h3><a class="toc-backref" href="#id11">5.4&nbsp;&nbsp;&nbsp;Representing symbolic information using vibrating&nbsp;patterns</a></h3>
+<p>Given that the tactile resolution on the wrist is modest if doubtful that such a device could provide useful transmittal of symbolic information without extensive user training. The blind reading braille generally use their finger tips, which are much better able to perceive differences in texture and&nbsp;pattern.</p>
 </div>
 </div>
 
